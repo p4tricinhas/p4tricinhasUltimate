@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Muda a fonte da página */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#imagem {
+    /* pega o id da imagem e arredonda as bordas */
+    border-radius: 5%;
+    /* distancia a imagem do forms */
+    margin-bottom: 5%;
+}
+
+.row {
+    padding: 20px;
+    /*Define a margem interna das linhas*/
+}
+
+.button {
+    text-align: start;
+    /* Coloca o botão no inicio */
+    padding: 5px;
+    /*Margem interna botão*/
+
+}
+
+fieldset {
+    /*Define o campo ao redor de todo o forms, com bordas arredondadas, margem interna, cor, etc..*/
+    border-radius: 3px;
+    padding: 3px;
+    margin-bottom: 15px;
+    border-color: black;
+    box-shadow: 2px 2px 2px black;
+}
+
+.content {
+    /*Define a cor do forms como um todo, assim com seu tamanho, margem e arredondamento*/
+    background-color: #fff;
+    width: 500px;
+    padding: 15px;
+    margin: 25px;
+    border-radius: 3px;
+    box-shadow: 0px 6px 10px black;
+}
+
+input {
+    /*Define como serão os inputs, as caixas de texto/botões, com transição quando se passa por cima */
+    border: none;
+    border-bottom: 2px solid #000000;
+    transition: 0.3s all ease-in-out;
+    outline: none;
+}
+
+legend {
+    /*Define o tamanho do título do forms*/
+    font-size: 1.5rem;
+}
+
+input[id="nome"],
+input[id="sobrenome"],
+input[id="telefone"],
+input[id="cep"],
+input[id="rua"],
+input[id="numero"],
+input[id="bairro"],
+input[id="cidade"],
+input[id="estado"] {
+    /*Define a largura das caixas de texto*/
+    width: 300px;
+    height: 30px;
+    float: right;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    /*Define as propriedades dos botões, cor, margem, bordas, etc..*/
+    border: none;
+    padding: 5px 10px;
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #ff9a52;
+    border: name;
+    color: #fff;
+    border-radius: 8px;
+    transition: 0.5s all ease-in-out;
+
+}
+
+label {
+    /* posiciona as labels à esquerda e distancia elas dos inputs */
+    float: left;
+    margin-right: 5%;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    /*Define o que ocorre ao se passar por cima dos botões com o mouse, aumentando seu tamanho e mudando sua cor*/
+    transform: scale(1.5, 1.5);
+    background-color: #f3761d;
+    cursor: pointer;
+}
+
+input[id="nome"]:focus,
+input[id="sobrenome"]:focus,
+input[id="cep"]:focus,
+input[id="rua"]:focus,
+input[id="numero"]:focus,
+input[id="bairro"]:focus,
+input[id="cidade"]:focus,
+input[id="estado"]:focus,
+input[id="telefone"]:focus {
+    /*Define o que ocorre ao se selecionar as caixas de texto, aumentando seu tamanho*/
+    transform: scale(1.2, 1.2);
+}
+
+label[for="camiseta"],
+label[for="calca"],
+label[for="moletom"],
+label[for="vestido"] {
+    border: 1px solid #040004;
+    border-radius: 5px;
+    padding: 10px 7px;
+    margin: 10px 0 10px 0;
+    display: inline-block;
+    font-weight: 600;
+    transition: 0.3s all ease-in-out;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+input[type="checkbox"]:checked+label {
+    background-color: #ff9a52;
+    border-color: black;
+    color: black;
+}
+
+.produto {
+    float: right;
+}
+
+.produto label {
+    margin: 5px;
+}
+
+label[for="camiseta"]:hover,
+label[for="calca"]:hover,
+label[for="moletom"]:hover,
+label[for="vestido"]:hover {
+    cursor: pointer;
+}

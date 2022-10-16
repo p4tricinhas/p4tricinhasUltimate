@@ -1,0 +1,162 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  body {
+      font-family: 'Fredoka One', cursive;
+      /*Muda a fonte da página*/
+
+      ;
+  }
+
+  .container {
+      /* faz a div ocupar toda a tela */
+      width: 100%;
+      height: 100%;
+
+      text-align: center;
+      position: relative;
+
+      /* definir o display como flex para utilizar FlexBox */
+      display: flex;
+      /* faz os itens serem dispostos horizontalmente */
+      flex-direction: row;
+      /* alinha os itens de acordo com a direção definida antes */
+      justify-content: center;
+      /* alinha os itens na vertical */
+      align-items: center;
+  }
+
+
+  .texto {
+      width: 500px;
+      height: 150px;
+      margin-top: 3%;
+  }
+
+  .texto h1 {
+      /* muda a fonte e o tamanho da letra do título do texto*/
+      font-family: 'Lobster', cursive;
+      font-size: 80px;
+  }
+
+  .texto p {
+      /* muda a fonte e o tamanho da letra do texto */
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      font-size: 40px;
+  }
+
+  .texto img {
+      /* dimensiona a imagem e a afasta do texto */
+      margin-top: 2%;
+      width: 200px;
+      height: 300px;
+      /*arrredonda as bordas da imagem  */
+      border-radius: 5%;
+  }
+
+  .texto .index {
+      /* estiliza a imagem da home */
+      width: 400px;
+      height: 200px;
+
+      /*arrredonda as bordas da imagem  */
+      border-radius: 60%;
+  }
+
+  .texto .sobre {
+      width: 250px;
+      height: 350px;
+      border-radius: 5%;
+  }
+
+  .navbar {
+      /*Arrruma os itenms da  div Navbar no geral, mudando cor de fundo ,etc...*/
+      overflow: hidden;
+      background-color: #EC7404;
+  }
+
+  .navbar a {
+      /*Arruma somente os A dentro da navbar, com tamanho de fonte, cor de fonte, margem interna, etc..*/
+      float: left;
+      font-size: 30px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+
+  .subnav {
+      /*Arruma o subnav em um geral, posicionando os itens, e escondendo quando o item for grande demais para o espaço */
+      float: left;
+      overflow: hidden;
+  }
+
+  /* Subnav button */
+  .subnav .subnavbtn {
+      /*Arruma o tamanho da fonte, bordas, cor, margem interna, externa, etc.. da subnav como um todo*/
+      font-size: 30px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+  }
+
+  .navbar a:hover,
+  .subnav:hover .subnavbtn {
+      /*Define o que acontece quando o mouse passa por cima da nav e da subnav, no caso, mudar a cor */
+      background-color: #FFBC04;
+  }
+
+  .subnav-conteudo {
+      /*Define as propriedades dos itens do submenu, como seu tamanho, posição, define que não serão mostrados, etc...*/
+      display: none;
+      position: absolute;
+      left: 0;
+      background-color: #FFBC04;
+      width: 100%;
+      z-index: 1;
+  }
+
+
+  .subnav-conteudo a {
+      /*Estiliza os links da subnav, mudando sua cor e alinhando a esquerda*/
+      float: left;
+      color: white;
+      text-decoration: none;
+  }
+
+  .subnav-conteudo a:hover {
+      /*Define o que acontece quando se passa o mouse em cima dos itens do submenu*/
+      background-color: #eee;
+      color: black;
+  }
+
+  .subnav:hover .subnav-conteudo {
+      /*Faz com que quando vc passe o mouse em cima da nav, abra o submenu*/
+      display: block;
+  }
+
+  footer {
+      background-color: #f7861c;
+      /*Define as propriedades do footer, como cor, posicao, tamanho, alinhamento, etc..*/
+      position: fixed;
+      bottom: 0;
+      /* estiliza o texto colocando uma linha em cima */
+      text-decoration: overline;
+      width: 100%;
+      height: 80px;
+      /* centraliza o texto */
+      text-align: center;
+      line-height: 100px;
+      font-size: 20px;
+  }
