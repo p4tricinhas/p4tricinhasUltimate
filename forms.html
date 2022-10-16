@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/pgn" href="./img/icone.png">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário Compra</title>
+</head>
+
+<body background="./img/gradient.png">
+
+    <div class="conteudo">
+
+        <div class="navbar">
+            <!--Div da navbar inteira-->
+            <a href="./index.html">Home</a>
+            <!--Primeiro item da navbar-->
+            <div class="subnav">
+                <!--Div que indica que aqui há uma subnavbar-->
+                <button class="subnavbtn">Carrinho </button>
+                <div class="subnav-conteudo">
+                    <!--Conteudos da subnavbar-->
+                    <a href="./forms.html">Fazer Cadastro</a>
+                    <a href="#">Compras Anteriores</a>
+                    <a href="#">Ver Carrinho</a>
+                </div>
+            </div>
+            <a href="#">Catálogo</a>
+            <a href="./sobre.html">Sobre</a>
+        </div>
+
+        <center>
+            <div class="content">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <!--Link para a API do forms-->
+                    <input type="hidden" name="accessKey" value="be25f74c-d545-4ec7-930f-e741882fa2db">
+                    <!--Define os valores da API, para ela poder mandar para o email certo-->
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
+                    <!-- redireciona para a home após enviar o formulario -->
+
+
+                    <fieldset>
+                        <!--Cria um campo ao redor de todo o forms-->
+                        <legend>Dados:</legend>
+
+                        <div class="row">
+                            <!--Div para as linhas, perguntas-->
+                            <!-- input do nome -->
+                            <label for="nome">Nome :</label>
+                            <input type="text" id="nome" name="$nome" placeholder="Digite seu nome" required>
+                            <!--Caixa de texto-->
+                        </div>
+                        <div class="row">
+                            <!-- input do sobrenome -->
+                            <label for="nome">Sobrenome :</label>
+                            <input type="text" id="sobrenome" name="$sobrennome" placeholder="Digite seu sobrenome"
+                                required>
+                        </div>
+                        <div class="row">
+                            <!-- input do telefone -->
+                            <label for="telefone">Telefone :</label>
+                            <input type="number" id="telefone" name="$telefone" placeholder="Digite seu telefone"
+                                required>
+                        </div>
+                        <div class="row">
+                            <!-- input do cep -->
+                            <label for="cep">CEP :</label>
+                            <input type="text" id="cep" name="$cep" placeholder="Digite seu CEP" required>
+                        </div>
+                        <div class="row">
+                            <!-- input do número -->
+                            <label for="numero">Número :</label>
+                            <input type="text" id="numero" name="$numero" placeholder="Digite o número da sua casa"
+                                required>
+                        </div>
+                        <div class="row">
+                            <!-- input da rua -->
+                            <label for="rua">Rua :</label>
+                            <input type="text" id="rua" name="$rua" placeholder="Digite sua rua " required>
+                        </div>
+
+                        <div class="row">
+                            <!-- input do bairro -->
+                            <label for="bairro">Bairro :</label>
+                            <input type="text" id="bairro" name="$bairro" placeholder="Digite seu bairro" required>
+
+                        </div>
+                        <div class="row">
+                            <!-- input da cidade -->
+                            <label for="cidade">Cidade :</label>
+                            <input type="text" id="cidade" name="$cidade" placeholder="Digite sua cidade" required>
+
+                        </div>
+                        <div class="row">
+                            <!-- input do estado -->
+                            <label for="estado">Estado :</label>
+                            <input type="text" id="estado" name="$estado" placeholder="Digite a UF do seu estado "
+                                required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <!-- input do estado -->
+                            <label for="">Produto :</label>
+                        </div>
+                        <div class="produto">
+                            <input type="checkbox" id="camiseta" name="$camiseta">
+                            <label for="camiseta">Camiseta</label>
+                            <!-- quando o for da label e o id do input são iguais, eles ficam linkados -->
+                            <input type="checkbox" id="calca" name="$calca">
+                            <label for="calca">Calça</label>
+                            <input type="checkbox" id="moletom" name="$moletom">
+                            <label for="moletom">Moletom</label>
+                            <input type="checkbox" id="vestido" name="$vestido">
+                            <label for="vestido">Vestido</label>
+                        </div>
+                    </fieldset>
+                    <div class="row">
+
+                        <input id="submit" type="submit" value="Enviar">
+                        <!--Botão de enviar-->
+                        <input type="reset" value="Limpar">
+                        <!--Botão de limpar-->
+                    </div>
+                </form>
+            </div>
+            <input type="image" src="/img/pat.jpg" alt="" id="imagem">
+        </center>
+
+    </div>
+    <footer>
+        Patricinhas de Beverly Hills - 2022 - SENAI
+    </footer>
+    <!--Rodapé da página com o nome do grupo-->
+
+
+
+</body>
+<script src="./js/forms.js"></script>
+
+</html>
